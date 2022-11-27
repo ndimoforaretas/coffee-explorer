@@ -45,26 +45,57 @@ export async function getStaticPaths() {
 const CoffeeStore = (initialProps) => {
 	const router = useRouter();
 
-	const id = router.query.id;
-
 	const [coffeeStore, setCoffeeStore] = useState(initialProps.coffeeStore);
 
 	console.log('initialProps.coffeeStore', initialProps.coffeeStore);
+
+	const id = router.query.id;
 
 	const {
 		state: { coffeeStores },
 	} = useContext(StoreContext);
 
+	const handleCreateCoffeeStore = async (coffeeStore) => {
+		try {
+			const { id, name, address, region, voting, imgUrl } = coffeeStore;
+			const response = await fetch('/api/createCoffeeStore', {
+				method: 'POST',
+				headers: {
+					'Content-Type': 'application/json',
+				},
+				body: JSON.stringify({
+					id,
+					name,
+					address: address || '',
+					region: region || '',
+					voting: 0,
+					imgUrl,
+				}),
+			});
+
+			const dbCoffeeStore = response.json();
+			console.log({ dbCoffeeStore });
+		} catch (error) {
+			console.error('Error creating coffee store', error);
+		}
+	};
+
 	useEffect(() => {
 		if (isEmpty(initialProps.coffeeStore)) {
 			if (coffeeStores.length > 0) {
-				const findCoffeeStoreById = coffeeStores.find((coffeeStore) => {
+				const coffeeStoreFromContext = coffeeStores.find((coffeeStore) => {
 					return coffeeStore.id.toString() === id;
 				});
-				setCoffeeStore(findCoffeeStoreById);
+				if (coffeeStoreFromContext) {
+					setCoffeeStore(coffeeStoreFromContext);
+					handleCreateCoffeeStore(coffeeStoreFromContext);
+				}
+			} else {
+				//SSG
+				handleCreateCoffeeStore(initialProps.coffeeStore);
 			}
 		}
-	}, [id]);
+	}, [id, initialProps, initialProps.coffeeStore, coffeeStores]);
 
 	const { name, address, region, imgUrl } = coffeeStore;
 

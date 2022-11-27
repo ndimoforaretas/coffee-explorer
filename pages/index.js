@@ -24,7 +24,6 @@ export default function Home(props) {
 	const { handleTrackLocation, locationErrorMsg, isFindingLocation } =
 		useTrackLocation();
 
-	// const [coffeeStores, setCoffeeStores] = useState('');
 	const [coffeeStoresError, setCoffeeStoresError] = useState(null);
 
 	const { dispatch, state } = useContext(StoreContext);
@@ -60,7 +59,7 @@ export default function Home(props) {
 		}
 
 		setCoffeeStoresByLocation();
-	}, [latLong]);
+	}, [latLong, dispatch]);
 
 	const handleOnBannerBtnClick = (e) => {
 		e.preventDefault();
