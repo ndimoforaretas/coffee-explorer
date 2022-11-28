@@ -99,13 +99,18 @@ const CoffeeStore = (initialProps) => {
 
 	const { name, address, region, imgUrl } = coffeeStore;
 
+	const [votingCount, setVotingCount] = useState(1);
+
 	if (router.isFallback) {
 		return <div>Loading...</div>;
 	}
 
 	const handleUpvoteButton = () => {
 		console.log('handle upvote');
+		let count = votingCount + 1;
+		setVotingCount(count);
 	};
+
 	return (
 		<div className={styles.layout}>
 			<Head>
@@ -165,7 +170,7 @@ const CoffeeStore = (initialProps) => {
 							height='24'
 							alt={`${name} icon`}
 						/>
-						<p className={styles.text}>1</p>
+						<p className={styles.text}>{votingCount}</p>
 					</div>
 
 					<button
