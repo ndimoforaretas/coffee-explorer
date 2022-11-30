@@ -15,8 +15,6 @@ const createCoffeeStore = async (req, res) => {
 
 				if (records.length !== 0) {
 					res.json(records);
-
-					res.json(records);
 				} else {
 					// create a record
 					if (name) {
