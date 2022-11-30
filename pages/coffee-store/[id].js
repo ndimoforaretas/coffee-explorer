@@ -74,7 +74,6 @@ const CoffeeStore = (initialProps) => {
 			});
 
 			const dbCoffeeStore = await response.json();
-			console.log({ dbCoffeeStore });
 		} catch (error) {
 			console.error('Error creating coffee store', error);
 		}
@@ -107,7 +106,6 @@ const CoffeeStore = (initialProps) => {
 
 	useEffect(() => {
 		if (data && data.length > 0) {
-			console.log('data from SWR', data);
 			setCoffeeStore(data[0]);
 			setVotingCount(data[0].voting);
 		}
