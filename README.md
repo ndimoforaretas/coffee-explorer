@@ -11,20 +11,22 @@ deployed on Netlify.
 
 <!-- SCREENSHOT -->
 
-### :key: Home Screen:
+### Home Screen:
 
 <br>
 
-![ScreenShot](/src/assets/img/modernshop-signin.png)
+![Coffee Explorer Home Screen](https://user-images.githubusercontent.com/103340138/207959061-bc30accd-25ff-4767-a538-ce98ed072d87.png)
+
 
  <hr/>
  
  
- ### :dancer: Item Details:
+ ### Item Details:
 
 <br>
 
-![ScreenShot](/src/assets/img/modernshop-women.png)
+![Coffee Explorer Item details](https://user-images.githubusercontent.com/103340138/207959106-ce92cf98-2c42-4178-be85-26b50fae5c0e.png)
+
 
  <hr/>
  
