@@ -1,38 +1,77 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with
-[`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<!-- TITLE -->
 
-## Getting Started
+# Coffee Explorer NextJS Project
 
-First, run the development server:
+Discover the best Cafés around you!
 
-```bash
-npm run dev
-# or
-yarn dev
-```
+<!-- SHOT DESCRIPTION -->
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the
-result.
+A full-stack NextJS App built with NextJS, FoursquareAPI, UnsplashAPI and
+deployed on Netlify.
 
-You can start editing the page by modifying `pages/index.js`. The page
-auto-updates as you edit the file.
+<!-- SCREENSHOT -->
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on
-[http://localhost:3000/api/hello](http://localhost:3000/api/hello). This
-endpoint can be edited in `pages/api/hello.js`.
+### :key: Home Screen:
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are
-treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead
-of React pages.
+<br>
 
-## Learn More
+![ScreenShot](/src/assets/img/modernshop-signin.png)
 
-## Deploy on Vercel
+ <hr/>
+ 
+ 
+ ### :dancer: Item Details:
 
-The easiest way to deploy your Next.js app is to use the
-[Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme)
-from the creators of Next.js.
+<br>
 
-Check out our
-[Next.js deployment documentation](https://nextjs.org/docs/deployment) for more
-details.
+![ScreenShot](/src/assets/img/modernshop-women.png)
+
+ <hr/>
+ 
+ 
+  
+<!-- TOOLS & TECHNOLOGIES USED -->
+
+## 🛠️ Built with:
+
+![Visual Studio](https://badgen.net/badge/icon/visualstudio?icon=visualstudio&label)
+![JavaScript](https://img.shields.io/badge/-JavaScript-black?style=flat-square&logo=javascript)
+![SCSS](https://img.shields.io/badge/-SCSS-black?style=flat-square&logo=SASS)
+![React](https://img.shields.io/badge/-React-black?style=flat-square&logo=react)
+![Next JS](https://img.shields.io/badge/Next-black?style=for-the-badge&logo=next.js&logoColor=white)
+![Netlify](https://img.shields.io/badge/-Netlify-black?style=flat-square&logo=netlify)
+
+ <hr/>
+
+<!-- PROJECT FEATURES -->
+
+## :sunglasses: Project Features:
+
+- Fully responsive
+- Full-Stack
+
+- **Requires device location to be turned on!**
+
+<hr/>
+
+<!-- PROJECT LINK -->
+
+### :link: Project Link :arrow_upper_right::
+
+[See the Coffee Explorer App in Action! (hosted on netlify)😃](https://coffee-explorer.netlify.app/)
+
+ <hr/>
+ 
+  <br>
+ 
+<h2 align="center"> :pray: Thanks for reading this far!</h2>
+
+<!-- CREDITS -->
+
+### :bulb: This project is an initial concept of:
+
+**[The Zero To Mastery Academy](https://github.com/zero-to-mastery) (ZTM)**
+facilitated by [**Ankita Kulkarni**](https://github.com/kulkarniankita) => An
+amazing community dedicated to supporting you learn in-demand skills, get hired,
+and advance your career.
+<img src="https://media.giphy.com/media/LnQjpWaON8nhr21vNW/giphy.gif" width="50">
